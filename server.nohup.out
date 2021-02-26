@@ -7,60 +7,55 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v2.4.3)
 
-2021-02-26 14:57:32.890  INFO 73442 --- [           main] .SpringCloudMicroserviceDemo2Application : Starting SpringCloudMicroserviceDemo2Application v1.0.0 using Java 11.0.8 on localhost with PID 73442 (/Users/xuzewei/microprograms/spring-cloud-microservice-demo2/target/spring-cloud-microservice-demo2-1.0.0.jar started by xuzewei in /Users/xuzewei/microprograms/spring-cloud-microservice-demo2)
-2021-02-26 14:57:32.897  INFO 73442 --- [           main] .SpringCloudMicroserviceDemo2Application : No active profile set, falling back to default profiles: default
-2021-02-26 14:57:35.738  INFO 73442 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f6f7db8e-7d9c-36e1-bb3e-372d104742e6
-2021-02-26 14:57:36.455  INFO 73442 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
-2021-02-26 14:57:36.479  INFO 73442 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-02-26 14:57:36.480  INFO 73442 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
-2021-02-26 14:57:36.581  INFO 73442 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-02-26 14:57:36.581  INFO 73442 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3526 ms
-2021-02-26 14:57:37.734  INFO 73442 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-02-26 14:57:38.753  INFO 73442 --- [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
-2021-02-26 14:57:38.884  WARN 73442 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2021-02-26 14:57:38.902  INFO 73442 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoint(s) beneath base path '/actuator'
-2021-02-26 14:57:38.978  INFO 73442 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2021-02-26 14:57:39.129  INFO 73442 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2021-02-26 14:57:39.143  INFO 73442 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2021-02-26 14:57:39.189  INFO 73442 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2021-02-26 14:57:39.190  INFO 73442 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2021-02-26 14:57:39.190  INFO 73442 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2021-02-26 14:57:39.190  INFO 73442 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2021-02-26 14:57:39.190  INFO 73442 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2021-02-26 14:57:39.190  INFO 73442 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2021-02-26 14:57:39.190  INFO 73442 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2021-02-26 14:57:39.595  INFO 73442 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2021-02-26 14:57:39.600  INFO 73442 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2021-02-26 14:57:39.606  INFO 73442 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2021-02-26 14:57:39.615  INFO 73442 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1614322659614 with initial instances count: 2
-2021-02-26 14:57:39.617  INFO 73442 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SPRING-CLOUD-MICROSERVICE-DEMO2 with eureka with status UP
-2021-02-26 14:57:39.618  INFO 73442 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1614322659618, current=UP, previous=STARTING]
-2021-02-26 14:57:39.622  INFO 73442 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRING-CLOUD-MICROSERVICE-DEMO2/172.25.16.187:spring-cloud-microservice-demo2:8082: registering service...
-2021-02-26 14:57:39.681  INFO 73442 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
-2021-02-26 14:57:39.682  INFO 73442 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
-2021-02-26 14:57:39.715  INFO 73442 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRING-CLOUD-MICROSERVICE-DEMO2/172.25.16.187:spring-cloud-microservice-demo2:8082 - registration status: 204
-2021-02-26 14:57:39.732  INFO 73442 --- [           main] .SpringCloudMicroserviceDemo2Application : Started SpringCloudMicroserviceDemo2Application in 8.073 seconds (JVM running for 9.348)
-2021-02-26 14:59:37.060  INFO 73442 --- [nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-02-26 14:59:37.065  INFO 73442 --- [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-02-26 14:59:37.118  INFO 73442 --- [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 52 ms
-2021-02-26 14:59:53.321 ERROR 73442 --- [nio-8082-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: No matching constant for [-1]] with root cause
+2021-02-26 16:05:42.754  INFO 75488 --- [           main] .SpringCloudMicroserviceDemo2Application : Starting SpringCloudMicroserviceDemo2Application v1.0.0 using Java 11.0.8 on localhost with PID 75488 (/Users/xuzewei/microprograms/spring-cloud-microservice-demo2/target/spring-cloud-microservice-demo2-1.0.0.jar started by xuzewei in /Users/xuzewei/microprograms/spring-cloud-microservice-demo2)
+2021-02-26 16:05:42.762  INFO 75488 --- [           main] .SpringCloudMicroserviceDemo2Application : No active profile set, falling back to default profiles: default
+2021-02-26 16:05:45.750  INFO 75488 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=2efca6eb-d0fe-38e7-b2ab-a28239f1c812
+2021-02-26 16:05:46.628  INFO 75488 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2021-02-26 16:05:46.647  INFO 75488 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-26 16:05:46.648  INFO 75488 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-02-26 16:05:46.772  INFO 75488 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-26 16:05:46.773  INFO 75488 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3846 ms
+2021-02-26 16:05:48.177  INFO 75488 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-26 16:05:49.033  INFO 75488 --- [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2021-02-26 16:05:49.139  WARN 75488 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2021-02-26 16:05:49.160  INFO 75488 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoint(s) beneath base path '/actuator'
+2021-02-26 16:05:49.234  INFO 75488 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2021-02-26 16:05:49.365  INFO 75488 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2021-02-26 16:05:49.376  INFO 75488 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-02-26 16:05:49.428  INFO 75488 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2021-02-26 16:05:49.428  INFO 75488 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2021-02-26 16:05:49.428  INFO 75488 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2021-02-26 16:05:49.428  INFO 75488 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2021-02-26 16:05:49.429  INFO 75488 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2021-02-26 16:05:49.429  INFO 75488 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2021-02-26 16:05:49.429  INFO 75488 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2021-02-26 16:05:49.770  INFO 75488 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2021-02-26 16:05:49.777  INFO 75488 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2021-02-26 16:05:49.781  INFO 75488 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-02-26 16:05:49.816  INFO 75488 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1614326749814 with initial instances count: 2
+2021-02-26 16:05:49.819  INFO 75488 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SPRING-CLOUD-MICROSERVICE-DEMO2 with eureka with status UP
+2021-02-26 16:05:49.820  INFO 75488 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1614326749820, current=UP, previous=STARTING]
+2021-02-26 16:05:49.825  INFO 75488 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRING-CLOUD-MICROSERVICE-DEMO2/172.25.16.187:spring-cloud-microservice-demo2:8082: registering service...
+2021-02-26 16:05:49.890  INFO 75488 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2021-02-26 16:05:49.893  INFO 75488 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
+2021-02-26 16:05:49.934  INFO 75488 --- [           main] .SpringCloudMicroserviceDemo2Application : Started SpringCloudMicroserviceDemo2Application in 8.522 seconds (JVM running for 9.818)
+2021-02-26 16:05:49.943  INFO 75488 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRING-CLOUD-MICROSERVICE-DEMO2/172.25.16.187:spring-cloud-microservice-demo2:8082 - registration status: 204
+2021-02-26 16:06:00.341  INFO 75488 --- [nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-26 16:06:00.343  INFO 75488 --- [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-26 16:06:00.349  INFO 75488 --- [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2021-02-26 16:06:16.079 ERROR 75488 --- [nio-8082-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is feign.RetryableException: Invalid status(-1) executing GET http://172.25.16.187:8081/health executing GET http://spring-cloud-microservice-demo1/health] with root cause
 
-java.lang.IllegalArgumentException: No matching constant for [-1]
-	at org.springframework.http.HttpStatus.valueOf(HttpStatus.java:540) ~[spring-web-5.3.4.jar!/:5.3.4]
-	at org.springframework.http.client.AbstractClientHttpResponse.getStatusCode(AbstractClientHttpResponse.java:33) ~[spring-web-5.3.4.jar!/:5.3.4]
-	at org.springframework.cloud.client.loadbalancer.ResponseData.<init>(ResponseData.java:68) ~[spring-cloud-commons-3.0.1.jar!/:3.0.1]
-	at org.springframework.cloud.loadbalancer.blocking.client.BlockingLoadBalancerClient.getClientResponse(BlockingLoadBalancerClient.java:126) ~[spring-cloud-loadbalancer-3.0.1.jar!/:3.0.1]
-	at org.springframework.cloud.loadbalancer.blocking.client.BlockingLoadBalancerClient.execute(BlockingLoadBalancerClient.java:100) ~[spring-cloud-loadbalancer-3.0.1.jar!/:3.0.1]
-	at org.springframework.cloud.loadbalancer.blocking.client.BlockingLoadBalancerClient.execute(BlockingLoadBalancerClient.java:84) ~[spring-cloud-loadbalancer-3.0.1.jar!/:3.0.1]
-	at org.springframework.cloud.client.loadbalancer.LoadBalancerInterceptor.intercept(LoadBalancerInterceptor.java:56) ~[spring-cloud-commons-3.0.1.jar!/:3.0.1]
-	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:93) ~[spring-web-5.3.4.jar!/:5.3.4]
-	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:77) ~[spring-web-5.3.4.jar!/:5.3.4]
-	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.3.4.jar!/:5.3.4]
-	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66) ~[spring-web-5.3.4.jar!/:5.3.4]
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776) ~[spring-web-5.3.4.jar!/:5.3.4]
-	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711) ~[spring-web-5.3.4.jar!/:5.3.4]
-	at org.springframework.web.client.RestTemplate.getForObject(RestTemplate.java:334) ~[spring-web-5.3.4.jar!/:5.3.4]
-	at com.github.microprograms.spring_cloud_microservice_demo2.Demo2Controller.health(Demo2Controller.java:18) ~[classes!/:1.0.0]
+java.io.IOException: Invalid status(-1) executing GET http://172.25.16.187:8081/health
+	at feign.Client$Default.convertResponse(Client.java:112) ~[feign-core-10.10.1.jar!/:na]
+	at feign.Client$Default.execute(Client.java:104) ~[feign-core-10.10.1.jar!/:na]
+	at org.springframework.cloud.openfeign.loadbalancer.LoadBalancerUtils.executeWithLoadBalancerLifecycleProcessing(LoadBalancerUtils.java:56) ~[spring-cloud-openfeign-core-3.0.1.jar!/:3.0.1]
+	at org.springframework.cloud.openfeign.loadbalancer.LoadBalancerUtils.executeWithLoadBalancerLifecycleProcessing(LoadBalancerUtils.java:91) ~[spring-cloud-openfeign-core-3.0.1.jar!/:3.0.1]
+	at org.springframework.cloud.openfeign.loadbalancer.FeignBlockingLoadBalancerClient.execute(FeignBlockingLoadBalancerClient.java:104) ~[spring-cloud-openfeign-core-3.0.1.jar!/:3.0.1]
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:119) ~[feign-core-10.10.1.jar!/:na]
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:89) ~[feign-core-10.10.1.jar!/:na]
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:100) ~[feign-core-10.10.1.jar!/:na]
+	at com.sun.proxy.$Proxy96.health(Unknown Source) ~[na:na]
+	at com.github.microprograms.spring_cloud_microservice_demo2.Demo2Controller.health(Demo2Controller.java:15) ~[classes!/:1.0.0]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -116,11 +111,3 @@ java.lang.IllegalArgumentException: No matching constant for [-1]
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.43.jar!/:9.0.43]
 	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
 
-2021-02-26 15:02:39.206  INFO 73442 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2021-02-26 15:07:39.225  INFO 73442 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2021-02-26 15:12:39.236  INFO 73442 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2021-02-26 15:17:39.249  INFO 73442 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2021-02-26 15:22:39.268  INFO 73442 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2021-02-26 15:27:39.293  INFO 73442 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2021-02-26 15:32:39.324  INFO 73442 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2021-02-26 15:37:39.373  INFO 73442 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

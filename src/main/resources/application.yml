@@ -6,6 +6,12 @@ spring:
     # 指定注册到eureka server上的服务名称
     name: spring-cloud-microservice-demo2
 
+feign:
+  okhttp:
+    enabled: false
+  httpclient:
+    enabled: true
+
 eureka:
   client:
     # 是否要注册到其他Eureka Server实例
