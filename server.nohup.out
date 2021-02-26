@@ -7,51 +7,153 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v2.4.3)
 
-2021-02-26 16:31:17.341  INFO 76496 --- [           main] .SpringCloudMicroserviceDemo2Application : Starting SpringCloudMicroserviceDemo2Application v1.0.0 using Java 11.0.8 on localhost with PID 76496 (/Users/xuzewei/microprograms/spring-cloud-microservice-demo2/target/spring-cloud-microservice-demo2-1.0.0.jar started by xuzewei in /Users/xuzewei/microprograms/spring-cloud-microservice-demo2)
-2021-02-26 16:31:17.354  INFO 76496 --- [           main] .SpringCloudMicroserviceDemo2Application : No active profile set, falling back to default profiles: default
-2021-02-26 16:31:20.396  INFO 76496 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=420dd5dc-04bc-36d2-b3dd-5f85e6b926cd
-2021-02-26 16:31:21.346  INFO 76496 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
-2021-02-26 16:31:21.374  INFO 76496 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-02-26 16:31:21.375  INFO 76496 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
-2021-02-26 16:31:21.504  INFO 76496 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-02-26 16:31:21.505  INFO 76496 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3962 ms
-2021-02-26 16:31:23.275  INFO 76496 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-02-26 16:31:24.079  INFO 76496 --- [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
-2021-02-26 16:31:24.161  WARN 76496 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2021-02-26 16:31:24.178  INFO 76496 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoint(s) beneath base path '/actuator'
-2021-02-26 16:31:24.262  INFO 76496 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2021-02-26 16:31:24.425  INFO 76496 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2021-02-26 16:31:24.438  INFO 76496 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2021-02-26 16:31:24.481  INFO 76496 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2021-02-26 16:31:24.481  INFO 76496 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2021-02-26 16:31:24.481  INFO 76496 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2021-02-26 16:31:24.481  INFO 76496 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2021-02-26 16:31:24.482  INFO 76496 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2021-02-26 16:31:24.482  INFO 76496 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2021-02-26 16:31:24.482  INFO 76496 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2021-02-26 16:31:24.857  INFO 76496 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2021-02-26 16:31:24.862  INFO 76496 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2021-02-26 16:31:24.867  INFO 76496 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2021-02-26 16:31:24.875  INFO 76496 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1614328284874 with initial instances count: 2
-2021-02-26 16:31:24.880  INFO 76496 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SPRING-CLOUD-MICROSERVICE-DEMO2 with eureka with status UP
-2021-02-26 16:31:24.882  INFO 76496 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1614328284882, current=UP, previous=STARTING]
-2021-02-26 16:31:24.890  INFO 76496 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRING-CLOUD-MICROSERVICE-DEMO2/172.25.16.187:spring-cloud-microservice-demo2:8082: registering service...
-2021-02-26 16:31:25.015  INFO 76496 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
-2021-02-26 16:31:25.017  INFO 76496 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRING-CLOUD-MICROSERVICE-DEMO2/172.25.16.187:spring-cloud-microservice-demo2:8082 - registration status: 204
-2021-02-26 16:31:25.019  INFO 76496 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
-2021-02-26 16:31:25.064  INFO 76496 --- [           main] .SpringCloudMicroserviceDemo2Application : Started SpringCloudMicroserviceDemo2Application in 9.07 seconds (JVM running for 10.384)
-2021-02-26 16:31:32.216  INFO 76496 --- [nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-02-26 16:31:32.216  INFO 76496 --- [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-02-26 16:31:32.219  INFO 76496 --- [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2021-02-26 16:31:48.108 ERROR 76496 --- [nio-8082-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is feign.FeignException$BadRequest: [400 Bad Request] during [GET] to [http://spring-cloud-microservice-demo1/health] [Demo1Feign#health()]: [<!DOCTYPE html><html lang="en"><title>400 Bad Request</title><body><h1>400 Bad Request</h1><footer>nx-sze-321</footer></body></html>]] with root cause
+2021-02-26 16:49:24.440  INFO 77573 --- [           main] .SpringCloudMicroserviceDemo2Application : Starting SpringCloudMicroserviceDemo2Application v1.0.0 using Java 11.0.8 on localhost with PID 77573 (/Users/xuzewei/microprograms/spring-cloud-microservice-demo2/target/spring-cloud-microservice-demo2-1.0.0.jar started by xuzewei in /Users/xuzewei/microprograms/spring-cloud-microservice-demo2)
+2021-02-26 16:49:24.455  INFO 77573 --- [           main] .SpringCloudMicroserviceDemo2Application : No active profile set, falling back to default profiles: default
+2021-02-26 16:49:28.754  INFO 77573 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=72d785e9-e830-3108-8453-f92835b83087
+2021-02-26 16:49:29.888  INFO 77573 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2021-02-26 16:49:29.914  INFO 77573 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-26 16:49:29.915  INFO 77573 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-02-26 16:49:30.053  INFO 77573 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-26 16:49:30.053  INFO 77573 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5369 ms
+2021-02-26 16:49:32.258  INFO 77573 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-26 16:49:33.289  INFO 77573 --- [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2021-02-26 16:49:33.418  WARN 77573 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2021-02-26 16:49:33.434  INFO 77573 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoint(s) beneath base path '/actuator'
+2021-02-26 16:49:33.522  INFO 77573 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2021-02-26 16:49:33.705  INFO 77573 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2021-02-26 16:49:33.716  INFO 77573 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-02-26 16:49:33.772  INFO 77573 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2021-02-26 16:49:33.772  INFO 77573 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2021-02-26 16:49:33.773  INFO 77573 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2021-02-26 16:49:33.773  INFO 77573 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2021-02-26 16:49:33.773  INFO 77573 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2021-02-26 16:49:33.773  INFO 77573 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2021-02-26 16:49:33.773  INFO 77573 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2021-02-26 16:49:34.438  INFO 77573 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2021-02-26 16:49:34.443  INFO 77573 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2021-02-26 16:49:34.454  INFO 77573 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-02-26 16:49:34.462  INFO 77573 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1614329374460 with initial instances count: 2
+2021-02-26 16:49:34.465  INFO 77573 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SPRING-CLOUD-MICROSERVICE-DEMO2 with eureka with status UP
+2021-02-26 16:49:34.465  INFO 77573 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1614329374465, current=UP, previous=STARTING]
+2021-02-26 16:49:34.475  INFO 77573 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRING-CLOUD-MICROSERVICE-DEMO2/172.25.16.187:spring-cloud-microservice-demo2:8082: registering service...
+2021-02-26 16:49:34.592  INFO 77573 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRING-CLOUD-MICROSERVICE-DEMO2/172.25.16.187:spring-cloud-microservice-demo2:8082 - registration status: 204
+2021-02-26 16:49:34.613  INFO 77573 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2021-02-26 16:49:34.614  INFO 77573 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
+2021-02-26 16:49:34.662  INFO 77573 --- [           main] .SpringCloudMicroserviceDemo2Application : Started SpringCloudMicroserviceDemo2Application in 12.41 seconds (JVM running for 14.321)
+2021-02-26 16:50:05.561  INFO 77573 --- [nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-26 16:50:05.562  INFO 77573 --- [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-26 16:50:05.566  INFO 77573 --- [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2021-02-26 16:50:21.406 ERROR 77573 --- [nio-8082-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is feign.RetryableException: Unexpected status line:  executing GET http://SPRING-CLOUD-MICROSERVICE-DEMO1/health] with root cause
 
-feign.FeignException$BadRequest: [400 Bad Request] during [GET] to [http://spring-cloud-microservice-demo1/health] [Demo1Feign#health()]: [<!DOCTYPE html><html lang="en"><title>400 Bad Request</title><body><h1>400 Bad Request</h1><footer>nx-sze-321</footer></body></html>]
-	at feign.FeignException.clientErrorStatus(FeignException.java:195) ~[feign-core-10.10.1.jar!/:na]
-	at feign.FeignException.errorStatus(FeignException.java:177) ~[feign-core-10.10.1.jar!/:na]
-	at feign.FeignException.errorStatus(FeignException.java:169) ~[feign-core-10.10.1.jar!/:na]
-	at feign.codec.ErrorDecoder$Default.decode(ErrorDecoder.java:92) ~[feign-core-10.10.1.jar!/:na]
-	at feign.AsyncResponseHandler.handleResponse(AsyncResponseHandler.java:96) ~[feign-core-10.10.1.jar!/:na]
-	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:138) ~[feign-core-10.10.1.jar!/:na]
+java.net.ProtocolException: Unexpected status line: 
+	at okhttp3.internal.http.StatusLine.parse(StatusLine.java:69) ~[okhttp-3.14.9.jar!/:na]
+	at okhttp3.internal.http1.Http1ExchangeCodec.readResponseHeaders(Http1ExchangeCodec.java:213) ~[okhttp-3.14.9.jar!/:na]
+	at okhttp3.internal.connection.Exchange.readResponseHeaders(Exchange.java:115) ~[okhttp-3.14.9.jar!/:na]
+	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.java:94) ~[okhttp-3.14.9.jar!/:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142) ~[okhttp-3.14.9.jar!/:na]
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:43) ~[okhttp-3.14.9.jar!/:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142) ~[okhttp-3.14.9.jar!/:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117) ~[okhttp-3.14.9.jar!/:na]
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:94) ~[okhttp-3.14.9.jar!/:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142) ~[okhttp-3.14.9.jar!/:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117) ~[okhttp-3.14.9.jar!/:na]
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93) ~[okhttp-3.14.9.jar!/:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142) ~[okhttp-3.14.9.jar!/:na]
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:88) ~[okhttp-3.14.9.jar!/:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142) ~[okhttp-3.14.9.jar!/:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117) ~[okhttp-3.14.9.jar!/:na]
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:229) ~[okhttp-3.14.9.jar!/:na]
+	at okhttp3.RealCall.execute(RealCall.java:81) ~[okhttp-3.14.9.jar!/:na]
+	at feign.okhttp.OkHttpClient.execute(OkHttpClient.java:169) ~[feign-okhttp-10.10.1.jar!/:na]
+	at org.springframework.cloud.openfeign.loadbalancer.LoadBalancerUtils.executeWithLoadBalancerLifecycleProcessing(LoadBalancerUtils.java:56) ~[spring-cloud-openfeign-core-3.0.1.jar!/:3.0.1]
+	at org.springframework.cloud.openfeign.loadbalancer.LoadBalancerUtils.executeWithLoadBalancerLifecycleProcessing(LoadBalancerUtils.java:91) ~[spring-cloud-openfeign-core-3.0.1.jar!/:3.0.1]
+	at org.springframework.cloud.openfeign.loadbalancer.FeignBlockingLoadBalancerClient.execute(FeignBlockingLoadBalancerClient.java:104) ~[spring-cloud-openfeign-core-3.0.1.jar!/:3.0.1]
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:119) ~[feign-core-10.10.1.jar!/:na]
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:89) ~[feign-core-10.10.1.jar!/:na]
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:100) ~[feign-core-10.10.1.jar!/:na]
+	at com.sun.proxy.$Proxy97.health(Unknown Source) ~[na:na]
+	at com.github.microprograms.spring_cloud_microservice_demo2.Demo2Controller.health(Demo2Controller.java:15) ~[classes!/:1.0.0]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.4.jar!/:5.3.4]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.4.jar!/:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.4.jar!/:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.4.jar!/:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.4.jar!/:5.3.4]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.4.jar!/:5.3.4]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.4.jar!/:5.3.4]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.4.jar!/:5.3.4]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.4.jar!/:5.3.4]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.4.jar!/:5.3.4]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.43.jar!/:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.4.jar!/:5.3.4]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.43.jar!/:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.43.jar!/:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar!/:9.0.43]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.43.jar!/:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar!/:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar!/:9.0.43]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.4.jar!/:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar!/:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar!/:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar!/:9.0.43]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.4.jar!/:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar!/:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar!/:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar!/:9.0.43]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93) ~[spring-boot-actuator-2.4.3.jar!/:2.4.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar!/:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar!/:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar!/:9.0.43]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.4.jar!/:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar!/:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar!/:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar!/:9.0.43]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.43.jar!/:9.0.43]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.43.jar!/:9.0.43]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.43.jar!/:9.0.43]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.43.jar!/:9.0.43]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.43.jar!/:9.0.43]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.43.jar!/:9.0.43]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346) ~[tomcat-embed-core-9.0.43.jar!/:9.0.43]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.43.jar!/:9.0.43]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.43.jar!/:9.0.43]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887) ~[tomcat-embed-core-9.0.43.jar!/:9.0.43]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684) ~[tomcat-embed-core-9.0.43.jar!/:9.0.43]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.43.jar!/:9.0.43]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.43.jar!/:9.0.43]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2021-02-26 16:51:06.556 ERROR 77573 --- [nio-8082-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is feign.RetryableException: Unexpected status line:  executing GET http://SPRING-CLOUD-MICROSERVICE-DEMO1/health] with root cause
+
+java.net.ProtocolException: Unexpected status line: 
+	at okhttp3.internal.http.StatusLine.parse(StatusLine.java:69) ~[okhttp-3.14.9.jar!/:na]
+	at okhttp3.internal.http1.Http1ExchangeCodec.readResponseHeaders(Http1ExchangeCodec.java:213) ~[okhttp-3.14.9.jar!/:na]
+	at okhttp3.internal.connection.Exchange.readResponseHeaders(Exchange.java:115) ~[okhttp-3.14.9.jar!/:na]
+	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.java:94) ~[okhttp-3.14.9.jar!/:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142) ~[okhttp-3.14.9.jar!/:na]
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:43) ~[okhttp-3.14.9.jar!/:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142) ~[okhttp-3.14.9.jar!/:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117) ~[okhttp-3.14.9.jar!/:na]
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:94) ~[okhttp-3.14.9.jar!/:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142) ~[okhttp-3.14.9.jar!/:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117) ~[okhttp-3.14.9.jar!/:na]
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93) ~[okhttp-3.14.9.jar!/:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142) ~[okhttp-3.14.9.jar!/:na]
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:88) ~[okhttp-3.14.9.jar!/:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142) ~[okhttp-3.14.9.jar!/:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117) ~[okhttp-3.14.9.jar!/:na]
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:229) ~[okhttp-3.14.9.jar!/:na]
+	at okhttp3.RealCall.execute(RealCall.java:81) ~[okhttp-3.14.9.jar!/:na]
+	at feign.okhttp.OkHttpClient.execute(OkHttpClient.java:169) ~[feign-okhttp-10.10.1.jar!/:na]
+	at org.springframework.cloud.openfeign.loadbalancer.LoadBalancerUtils.executeWithLoadBalancerLifecycleProcessing(LoadBalancerUtils.java:56) ~[spring-cloud-openfeign-core-3.0.1.jar!/:3.0.1]
+	at org.springframework.cloud.openfeign.loadbalancer.LoadBalancerUtils.executeWithLoadBalancerLifecycleProcessing(LoadBalancerUtils.java:91) ~[spring-cloud-openfeign-core-3.0.1.jar!/:3.0.1]
+	at org.springframework.cloud.openfeign.loadbalancer.FeignBlockingLoadBalancerClient.execute(FeignBlockingLoadBalancerClient.java:104) ~[spring-cloud-openfeign-core-3.0.1.jar!/:3.0.1]
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:119) ~[feign-core-10.10.1.jar!/:na]
 	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:89) ~[feign-core-10.10.1.jar!/:na]
 	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:100) ~[feign-core-10.10.1.jar!/:na]
 	at com.sun.proxy.$Proxy97.health(Unknown Source) ~[na:na]

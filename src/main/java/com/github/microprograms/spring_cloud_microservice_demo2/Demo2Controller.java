@@ -1,7 +1,7 @@
 package com.github.microprograms.spring_cloud_microservice_demo2;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -10,7 +10,7 @@ public class Demo2Controller {
     @Autowired
     private Demo1Feign demo1Feign;
 
-    @RequestMapping("/health")
+    @GetMapping("/health")
     public String health() {
         String demo1HealthResponse = demo1Feign.health();
         if ("Ok".equals(demo1HealthResponse)) {
