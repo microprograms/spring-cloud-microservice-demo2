@@ -49,7 +49,7 @@ eureka:
     # 重要！如果不指定IP，虽然能注册成功，但是无法通过“服务名”调用！
     ip-address: 127.0.0.1
     # hostname: localhost
-    instance-id: ${eureka.instance.ip-address}:${spring.application.name}:${server.port}
+    instance-id: ${eureka.instance.ip-address}:${spring.application.name}:${server.port}:v@project.version@
 
 management:
   endpoint:
