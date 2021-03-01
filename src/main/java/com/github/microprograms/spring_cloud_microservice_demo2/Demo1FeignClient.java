@@ -3,9 +3,10 @@ package com.github.microprograms.spring_cloud_microservice_demo2;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 
-@FeignClient("SPRING-CLOUD-MICROSERVICE-DEMO1")
-public interface Demo1Feign {
+@FeignClient(name = "spring-cloud-microservice-demo1")
+public interface Demo1FeignClient {
 
     @GetMapping("health")
     String health();
+
 }

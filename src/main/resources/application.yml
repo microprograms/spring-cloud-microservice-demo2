@@ -6,11 +6,40 @@ spring:
     # 指定注册到eureka server上的服务名称
     name: spring-cloud-microservice-demo2
 
-feign:
-  okhttp:
+ribbon:
+  eager-load:
     enabled: true
-  httpclient:
-    enabled: false
+    clients: spring-cloud-microservice-demo1
+
+feign:
+  client:
+    config:
+      spring-cloud-microservice-demo1:
+        # 相当于Request.Options
+        connectTimeout: 10000
+        # 相当于Request.Options
+        readTimeout: 10000
+        # 配置Feign的日志级别，相当于代码配置方式中的Logger
+        loggerLevel: full
+        # Feign的错误解码器，相当于代码配置方式中的ErrorDecoder
+        # errorDecoder: com.example.SimpleErrorDecoder
+        # 配置重试，相当于代码配置方式中的Retryer
+        # retryer: com.example.SimpleRetryer
+        # 配置拦截器，相当于代码配置方式中的RequestInterceptor
+        # requestInterceptors:
+        #   - com.example.FooRequestInterceptor
+        #   - com.example.BarRequestInterceptor
+        decode404: false
+
+logging:
+  level:
+    com.github.microprograms.spring_cloud_microservice_demo2.Demo1FeignClient: debug
+
+# feign:
+#   okhttp:
+#     enabled: true
+#   httpclient:
+#     enabled: false
 
 eureka:
   client:
