@@ -11,7 +11,21 @@ spring:
 #     enabled: true
 #     clients: spring-cloud-microservice-demo1
 
+ribbon:
+  ConnectTimeout: 2500 # 请求连接的超时时间
+  ReadTimeout: 10000 # 请求处理的超时时间
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10000
+
 feign:
+  hystrix:
+    enabled: true
   okhttp:
     enabled: true
   httpclient:
