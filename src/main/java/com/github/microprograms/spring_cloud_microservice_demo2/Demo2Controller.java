@@ -14,12 +14,7 @@ public class Demo2Controller {
 
     @GetMapping("/health")
     public String health() {
-        String demo1HealthResponse = demo1FeignClient.health();
-        if ("Ok!".equals(demo1HealthResponse)) {
-            return "spring-cloud-microservice-demo1 is Ok and spring-cloud-microservice-demo2 is Ok";
-        } else {
-            return "spring-cloud-microservice-demo2 is Ok";
-        }
+        return "demo1 health response is " + demo1FeignClient.health();
     }
 
 }
