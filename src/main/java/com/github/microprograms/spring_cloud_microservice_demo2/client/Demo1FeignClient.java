@@ -1,4 +1,4 @@
-package com.github.microprograms.spring_cloud_microservice_demo2;
+package com.github.microprograms.spring_cloud_microservice_demo2.client;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;

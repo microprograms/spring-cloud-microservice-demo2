@@ -1,5 +1,7 @@
 package com.github.microprograms.spring_cloud_microservice_demo2;
 
+import com.github.microprograms.spring_cloud_microservice_demo2.client.Demo1FeignClient;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,7 +15,7 @@ public class Demo2Controller {
     @GetMapping("/health")
     public String health() {
         String demo1HealthResponse = demo1FeignClient.health();
-        if ("Ok".equals(demo1HealthResponse)) {
+        if ("Ok!".equals(demo1HealthResponse)) {
             return "spring-cloud-microservice-demo1 is Ok and spring-cloud-microservice-demo2 is Ok";
         } else {
             return "spring-cloud-microservice-demo2 is Ok";

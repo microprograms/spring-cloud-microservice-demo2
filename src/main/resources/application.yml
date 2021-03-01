@@ -6,54 +6,38 @@ spring:
     # 指定注册到eureka server上的服务名称
     name: spring-cloud-microservice-demo2
 
-ribbon:
-  eager-load:
-    enabled: true
-    clients: spring-cloud-microservice-demo1
+# ribbon:
+#   eager-load:
+#     enabled: true
+#     clients: spring-cloud-microservice-demo1
 
 feign:
+  okhttp:
+    enabled: true
+  httpclient:
+    enabled: false
   client:
     config:
       spring-cloud-microservice-demo1:
-        # 相当于Request.Options
         connectTimeout: 10000
-        # 相当于Request.Options
         readTimeout: 10000
-        # 配置Feign的日志级别，相当于代码配置方式中的Logger
         loggerLevel: full
-        # Feign的错误解码器，相当于代码配置方式中的ErrorDecoder
-        # errorDecoder: com.example.SimpleErrorDecoder
-        # 配置重试，相当于代码配置方式中的Retryer
-        # retryer: com.example.SimpleRetryer
-        # 配置拦截器，相当于代码配置方式中的RequestInterceptor
-        # requestInterceptors:
-        #   - com.example.FooRequestInterceptor
-        #   - com.example.BarRequestInterceptor
-        decode404: false
 
 logging:
   level:
-    com.github.microprograms.spring_cloud_microservice_demo2.Demo1FeignClient: debug
-
-# feign:
-#   okhttp:
-#     enabled: true
-#   httpclient:
-#     enabled: false
+    com.github.microprograms.spring_cloud_microservice_demo2.client: debug
 
 eureka:
   client:
-    # 是否要注册到其他Eureka Server实例
-    register-with-eureka: true
-    # 是否要从其他Eureka Server实例获取数据
-    fetch-registry: true
     service-url:
-      # 指定eureka server通信地址，注意/eureka/小尾巴不能少
       # defaultZone: http://eureka:password@localhost:8761/eureka/
       defaultZone: http://localhost:8761/eureka/
-  # instance:
-  # 是否注册IP到eureka server，如不指定或设为false，那就会注册主机名到eureka server
-  # prefer-ip-address: true
+  instance:
+    # 是否注册IP到eureka server，如不指定或设为false，那就会注册主机名到eureka server
+    prefer-ip-address: true
+    # 重要！如果不指定IP，虽然能注册成功，但是无法通过“服务名”调用！
+    ip-address: 127.0.0.1
+    # hostname: localhost
 
 management:
   endpoint:
