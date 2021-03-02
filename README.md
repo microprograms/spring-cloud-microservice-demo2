@@ -4,6 +4,12 @@
 - `依赖：` [Eureka 注册中心](https://github.com/microprograms/spring-cloud-starter-netflix-eureka-server-security-demo) [Spring Cloud 微服务 Demo1](https://github.com/microprograms/spring-cloud-microservice-demo1)
 
 
+#### 版本依赖
+- `Jdk` 1.8 及以上
+- `Spring Boot` 2.3.9.RELEASE
+- `Spring Cloud` Hoxton.SR10
+
+
 #### 编译打包
 
 ```shell
