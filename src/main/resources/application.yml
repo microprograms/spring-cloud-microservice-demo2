@@ -42,6 +42,8 @@ feign:
 
 logging:
   level:
+    root: INFO
+    org.springframework.cloud.sleuth: DEBUG
     com.github.microprograms.spring_cloud_microservice_demo2.client: debug
 
 eureka:
