@@ -1,7 +1,13 @@
 spring:
   application:
     # 指定注册到eureka server上的服务名称
-    name: spring-cloud-microservice-demo2
+    name: demo2
+  zipkin:
+    baseUrl: http://localhost:9411
+  sleuth:
+    sampler:
+      # sleuth采样率，默认为0.1，值越大收集越及时，但性能影响也越大
+      percentage: 1
 
 # ribbon:
 #   eager-load:
