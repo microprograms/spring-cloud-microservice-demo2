@@ -6,7 +6,7 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
 
-@FeignClient(name = "spring-cloud-microservice-demo1", fallback = Fallback.class)
+@FeignClient(name = "demo1", fallback = Fallback.class)
 public interface Demo1FeignClient {
 
     @GetMapping("health")
