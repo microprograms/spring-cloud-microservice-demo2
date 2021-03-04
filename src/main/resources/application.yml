@@ -3,7 +3,7 @@ spring:
     # 指定注册到eureka server上的服务名称
     name: demo2
   zipkin:
-    baseUrl: http://localhost:9411
+    baseUrl: http://zipkin-server:9411
   sleuth:
     sampler:
       # sleuth采样率，默认为0.1，值越大收集越及时，但性能影响也越大
@@ -49,15 +49,14 @@ logging:
 eureka:
   client:
     service-url:
-      # defaultZone: http://localhost:8761/eureka/
-      defaultZone: http://eureka:password@localhost:8761/eureka/
-  instance:
-    # 是否注册IP到eureka server，如不指定或设为false，那就会注册主机名到eureka server
-    prefer-ip-address: true
-    # 重要！如果不指定IP，虽然能注册成功，但是无法通过“服务名”调用！
-    ip-address: 127.0.0.1
-    # hostname: localhost
-    instance-id: ${eureka.instance.ip-address}:${spring.application.name}:${server.port}:v@project.version@
+      defaultZone: http://eureka:password@eureka-server:8761/eureka/
+  # instance:
+  # 是否注册IP到eureka server，如不指定或设为false，那就会注册主机名到eureka server
+  # prefer-ip-address: true
+  # 重要！如果不指定IP，虽然能注册成功，但是无法通过“服务名”调用！
+  # ip-address: 127.0.0.1
+  # hostname: localhost
+  # instance-id: ${eureka.instance.ip-address}:${spring.application.name}:${server.port}:v@project.version@
 
 management:
   endpoint:
